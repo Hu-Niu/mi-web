@@ -1,0 +1,663 @@
+/* index样式 */
+
+
+/* 1.top-nav-wrapper */
+/* 1.1 top-left-subnav */
+.top-nav-wrapper{
+    background-color: #333;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+/* 设置超链接的样式 */
+.top-left-subnav a{
+    font-family:Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    font-size: 12px;
+    color: #b0b0b0;
+    display: block;
+}
+/* 设置超链接移入变色 */
+.top-left-subnav a:hover{
+    color: #fff;
+}
+/* 设置浮动 */
+.top-left-menu,.top-nav-wrapper li{
+    float: left;
+}
+.top-shop,.top-right-menu{
+    float: right;
+}
+/* 设置分割线 */
+.top-left-subnav .line{
+    color: #424242;
+    margin: 0 8px;
+    font-size: 12px;
+}
+/* 为下载app下拉框开启定位 */
+.top-app{
+    position: relative;
+}
+/* 下载app的下拉效果 */
+.Downloadapp{
+    width: 124px;
+    height: 0px;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    left: -38px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 1;
+    box-shadow: 0 0 10px rgb(0, 0, .3);
+    transition: height 0.3s;
+    z-index: 999;
+}
+/* 设置二维码图片格式 */
+.Downloadapp img{
+    width: 90px;
+    display: block;
+    margin: 18px auto 12px;
+}
+/* 设置下拉app内文字 */
+.Downloadapp span{
+    color: #000;
+    font-size: 14px;
+}
+/* 设置小三角 */
+.app::after{
+    content: '';
+    display: none;
+    border: 8px solid transparent;
+    border-bottom-color: white;
+    border-top: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+/* 设置鼠标移入效果 */
+.top-app:hover .Downloadapp,
+.app:hover::after{
+    height: 148px;
+    display: block;
+}
+
+
+/* 1.2 top-right-subnav */
+/* 设置购物车的格式 */
+.top-shop{
+    margin-left: 26px;
+}
+/* 设置购物车图标 */
+.top-shop .shop i{
+    margin-right: 4px;
+}
+/* 设置kuang效果 */
+.shop-kuang{
+    width: 316px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0.3);
+    border-top: none;
+    transition: height 0.3s;
+    z-index: 999;
+}
+/* 为框的父元素开启绝对定位 */
+.top-shop .shop{
+    position: relative;
+}
+/* 为购物车移入设置效果 */
+.top-shop a:hover{
+    background-color: #fff;
+}
+/* 设置购物车内样式 */
+.top-shop a{
+    width: 120px;
+    background-color: #424242;
+    text-align: center;
+
+    border: 1px solid transparent;
+    border-bottom: 0;
+    border-top: 0;
+}
+/* 为购物车字体移入设置效果 */
+.top-shop:hover a{
+    color: #ff6700;;
+}
+/* 为框中文字设置样式 */
+.shop-kuang span{
+    color: #424242;
+    font-size: 12px;
+    margin: 0 20px 20px;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    display: none;
+}
+/* 为框设置移入效果 */
+.top-shop:hover .shop-kuang,
+.top-shop:hover .shop-kuang span{
+    display: block;
+    height: 100px;
+}
+
+
+/* 2.header-nav-wrapper */
+.header-nav-wrapper{
+    height: 100px;
+    position: relative;
+}
+/* 2.1 header-left */
+/* 设置米-家 图片样式 */
+.header-left{
+    width: 55px;
+    height: 55px;
+    float: left;
+    margin-top: 22px;
+    overflow: hidden;
+    position: relative;
+    text-indent: -9999px;
+}
+/* 统一设置a超链接 */
+.header-left a{
+    background-color: #ff6700;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    background-image: url(../img/header/mi-logo.png);
+    background-position: center;
+    transition: left 0.3s;
+}
+/* 设置home的样式 */
+.header-nav-wrapper .img-home{
+    background-image: url(../img/header/mi-home.png);
+    left: -55px;
+}
+/* 设置鼠标移入米->家 */
+.header-left:hover .img-home{
+    left: 0px;
+}
+.header-left:hover .img-mi{
+    left: 55px;
+}
+
+/* 2.2 header-inter */
+/* 设置header-inter菜单浮动 */
+.header-nav-wrapper li{
+    float: left;
+}
+/* 设置菜单文字样式 */
+.header-inter{
+    float: left;
+    margin-left: 7px;
+}
+/* 设置菜单列表 */
+.header-inter-list{
+    /* width: 850px; */
+    height: 100px;
+    line-height: 100px;
+    padding-left: 58px;
+}
+/* 隐藏全部商品分类 */
+.hidden{
+    visibility: hidden;
+}
+/* 设置移入nav导航栏出现的白框 */
+.goods-info{
+    height: 0;
+    width: 100%;
+    position: fixed;
+    top: 140px;
+    left: 0;
+    transition: height 0.3s;
+    z-index: 9999;
+}
+/* 设置移入白框出现 */
+.header-inter .show-goods:hover ~ .goods-info,
+.header-inter .goods-info:hover{
+    border: 1px solid  #E0E0E0;
+    background-color: white;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, .2);
+    height: 228px;
+}
+/* 设置header-inter-list里的li浮动 */
+.header-inter-list > li{
+    float: left;
+}
+/* 设置菜单列表里的a */
+.header-inter-list a{
+    margin-right: 20px;
+    font-size: 16px;
+    display: block;
+}
+/* 设置全部商品栏 */
+.all-goods{
+    width: 234px;
+    height: 420px;
+    background-color: rgba(0, 0, 0,.2);
+    position: absolute;
+    left: 0;
+    line-height: 1;
+    padding: 20px 0;
+    z-index: 999;
+}
+/* 设置全部商品的li */
+.all-goods li a{
+    color: white;
+    display: block;
+    width: 174px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 30px;
+    margin-right: 0;
+    font-size: 14px;
+}
+/* 设置鼠标移入li变化 */
+.all-goods li:hover{
+    background-color: #ff6700;
+}
+/* 设置右箭头 */
+.all-goods a i{
+    float: right;
+    line-height: 42px;
+}
+
+/* 2.3 header-search */
+.header-search{
+    width: 296px;
+    height: 50px;
+    /* background-color: royalblue; */
+    float: right;
+    margin-top: 25px;
+    border: 1px solid rgb(224, 224, 224);
+}
+/* 设置文本框 */
+.search-inp{
+    border: none;
+    width: 224px;
+    height: 50px;
+    float: left;
+    padding: 10px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+/* 设置搜索按钮 */
+.search-but{
+    float: left;
+    width: 52px;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    color: #616161;
+    font-size: 16px;
+    border-left: 1px solid rgb(224, 224, 224);
+    outline: none;
+}
+/* 设置聚焦变色 */
+.search-inp:focus,
+.search-inp:focus + button{
+    outline: 1px solid #ff6700;
+}
+/* 鼠标移入按钮变话 */
+.search-but:hover{
+    background-color: #ff6700;
+    color: #fff;
+    border-color: #ff6700;
+}
+
+
+
+/* 3.banner */
+/* 给容器设置相对定位 */
+.banner-wrapper{
+   position: relative;
+   height: 460px;
+}
+.banner{
+    width: 100%;
+    height: 460px;
+    position: relative;
+    overflow: hidden;
+}
+.all-imgs{
+    /* width: 12260px; */
+    position: absolute;
+    left: 0;
+}
+.all-imgs li{
+
+    float: left;
+}
+.all-imgs li img{
+    width: 1226px;
+    height: 460px;
+}
+/* 设置图片格式 */
+.banner-wrapper img{
+    vertical-align: top;
+    width: 100%;
+}
+/* 设置点的位置 */
+.dian-list{
+    position: absolute;
+    right: 35px;
+    bottom: 22px;
+}
+/* 设置点的样式 */
+.dian-list a{
+    float: left;
+    background-color: rgba(0, 0, 0, .4);
+    border: 2px solid rgba(225, 225, 225,.4);
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    right: 0;
+    margin-left: 8px;
+}
+/* 设置点的聚焦 */
+.dian-list .focus-dian,
+.dian-list a:hover{
+    border-color: rgba(0, 0, 0, .4);
+    background-color:rgba(255, 255, 255, .4);
+}
+/* 设置雪碧图 */
+.prev-next a{
+    width: 41px;
+    height: 69px;
+    background-image: url(../img/banner/icon-slides.png);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto 0;
+}
+/* 雪碧图左 */
+.prev{
+    left: 234px;
+    background-position: -84px;
+}
+/* 左鼠标移入 */
+.prev:hover{
+    background-position: 0;
+}
+/* 雪碧图右 */
+.next{
+    right: 0px;
+    background-position: -125px;
+}
+/* 右鼠标移入 */
+.next:hover{
+    background-position: -42px;
+}
+
+
+/* .guanggao */
+.guanggao{
+    height: 170px;
+    margin-top: 14px;
+}
+/* 4.1 gg-left */
+/* 设置广告左区域 */
+.gg-left{
+    width: 228px;
+    height: 168px;
+    background-color: #5f5750;
+    margin-right: 14px;
+    padding-top: 2px;
+    padding-left: 6px;
+}
+/* 设置图标列表 */
+.guanggao li,
+.gg-left,
+.gg-imgs{
+    float: left;
+}
+/* 设置超链接 */
+.gg-left li a{
+    display: block;
+    text-align: center;
+    height: 84px;
+    width: 76px;
+    font-size: 12px;
+    color: #cfccca;
+    overflow: hidden;
+}
+/* 设置图标字体 */
+.gg-left li i{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+/* 为gg-left设置定位 */
+.gg-left li{
+    position: relative;
+}
+/* 设置移入变色 */
+.gg-left li a:hover{
+    color: white;
+}
+/* 上边框 */
+.gg-left a::before{
+    content: '';
+    width: 64px;
+    height: 1px;
+    background-color:  #665e57;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+}
+/* 做边框 */
+.gg-left li::before{
+    content: '';
+    width: 1px;
+    height: 70px;
+    background-color: #665e57;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+}
+
+/* 4.2 gg-imgs */
+.guanggao .gg-imgs li{
+    width: 316px;
+    margin-right: 15px;
+}
+.guanggao .gg-imgs img{
+    width: 100%;
+}
+.guanggao .gg-imgs li:last-child{
+    margin-right: 0;
+}
+
+
+
+
+/* 5.back-top */
+.back-top{
+    width: 26px;
+    height: 250px;
+    position:fixed;
+    bottom: 60px;
+    right: 50%;
+    margin-right: -641px;
+}
+.back-top div{
+    margin-top: 15px;
+    margin-left: 2px;
+}
+
+
+/* 6.footer */
+/*footer start*/
+.footer {
+    width: 100%;
+    height: 440px;
+    min-width: 1226px;
+    font-size: 9px;
+  }
+  .f_service {
+    width: 1226px;
+    height: 80px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .f_service ul {
+    padding-top: 25px;
+  }
+  .f_service li {
+    float: left;
+    width: 244px;
+    border-right: 1px solid #e0e0e0;
+  }
+  .f_service li a {
+    margin-left: 55px;
+    color: #616161;
+    font-size: 16px;
+    transition: .3s;
+  }
+  .f_service li a .iconfont {
+    font-size: 24px;
+    margin-right: 4px;
+  }
+  .f_service li a:hover {
+    color: #ff6700
+  }
+  .f_info {
+    width: 1226px;
+    height: 120px;
+    margin: 40px auto;
+  }
+  .f_i_left {
+    width: 979px;
+    height: 120px;
+    ;
+    float: left;
+    border-right: 1px solid #e0e0e0;
+  }
+  .f_i_left dl {
+    float: left;
+    width: 160px;
+  }
+  .f_i_left dl dt {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .f_i_left dl dd {
+    margin-bottom: 10px;
+  }
+  .f_i_left dl dd a {
+    color: #757575
+  }
+  .f_i_left dl dd a:hover {
+    color: #f60;
+  }
+  .f_i_right {
+    width: 246px;
+    height: 120px;
+    margin-top: -110px;
+    float: right;
+    text-align: center;
+  }
+  .f_i_right .p1 {
+    font-size: 22px;
+    color: #ff6700;
+  }
+  .f_i_right .p2,
+  #footer .f_info .f_i_right .p3 {
+    color: #616161
+  }
+  .f_i_right .p2 {
+    margin: 6px 0 2px;
+  }
+  .f_i_right a {
+    width: 120px;
+    height: 30px;
+    display: block;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+    text-align: center;
+    line-height: 30px;
+    margin: 18px auto 0;
+    transition: .3s;
+  }
+  .f_i_right a:hover {
+    background: #ff6700;
+    color: #fff;
+  }
+  .f_link {
+    height: 129px;
+    width: 100%;
+    background: #fafafa;
+    padding-top: 30px;
+  }
+  .f_l_info {
+    width: 1226px;
+    height: 57px;
+    margin: 0px auto;
+  }
+  .f_l_i_left {
+    width: 850px;
+    height: 57px;
+    float: left;
+    position: relative;
+  }
+  .f_l_i_left img {
+    float: left;
+    background: #f60 center;
+  }
+  .f_l_i_left ul {
+    float: left;
+    margin-left: 4px;
+  }
+  .f_l_i_left ul li {
+    float: left;
+  }
+  .f_l_i_left ul li a {
+    color: #757575;
+    margin: 0 4px;
+  }
+  .f_l_i_left ul li a:hover {
+    color: #ff6700
+  }
+  .f_l_i_left span {
+    position: absolute;
+    top: 20px;
+    left: 64px;
+    color: #b0b0b0;
+    width: 594px;
+  }
+  .f_l_i_right {
+    width: 376px;
+    height: 57px;
+    float: left;
+  }
+  .f_l_i_right a img {
+    width: 85px;
+    height: 28px;
+  }
+  .f_l_i_right a {
+    float: left;
+    margin-left: 4px;
+  }
+  .f_l_bottom {
+    width: 1226px;
+    height: 19px;
+    background: pink;
+    margin: 38px auto 0;
+    background: url(image/footer/footer.png) no-repeat center;
+  }
+
+
+

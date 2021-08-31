@@ -1,0 +1,24 @@
+/* 通用样式 */
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+    min-width: 1226px;
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.w{
+    width: 1226px;
+    margin: 0 auto;
+}

@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "90513",
+      "name": "15天无理由退货",
+      "font_class": "15tianwuliyoutuihuo",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "6102942",
+      "name": "七天无理由退换",
+      "font_class": "qitianwuliyoutuihuan",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "6234773",
+      "name": "包邮",
+      "font_class": "baoyou",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "8675083",
+      "name": "地图",
+      "font_class": "ditu",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "15784817",
+      "name": "维修",
+      "font_class": "weixiu",
+      "unicode": "e74b",
+      "unicode_decimal": 59211
+    }
+  ]
+}
